@@ -1,0 +1,231 @@
+@font-face {
+    font-family: orange-lemonade;
+    src: url('../font/Orange\ Lemonade.otf');
+}
+
+@font-face {
+    font-family: Bejo;
+    src: url('../font/BEJO-PersonalUse.otf');
+}
+
+* {
+    margin:0;
+}
+
+html, body {
+    height: 99%;
+    overflow:hidden;
+}
+
+.main{  
+    background: rgb(2,0,36);
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.main2{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,0.8155637254901961) 77%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -15px;
+    overflow: auto;
+}
+
+#heading{
+    color: white;
+    /* padding-top: 10px; */
+    font-family: orange-lemonade;
+    background: transparent;
+     position: absolute;
+    font-size: 71px;
+    top: 3%;
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+    pointer-events: none;
+}
+
+#desc{
+    position: absolute;
+    top: 15%;
+    color: mediumblue;
+    text-shadow: 2px 4px 4px rgb(46 91 173 / 60%);
+    margin-left: -3px;
+    margin-right: 13px;
+    text-align: center;
+    pointer-events: none;
+}
+
+#contact{
+    position: absolute;
+    font-family: Bejo;
+    font-size: 1.6rem;
+    color: orange;
+    text-shadow: 2px 4px 4px rgb(46 91 173 / 60%);
+    cursor: pointer;
+    right: 6%;
+}
+
+
+#home{
+    position: absolute;
+    font-family: Bejo;
+    font-size: 1.6rem;
+    color: orange;
+    text-shadow: 2px 4px 4px rgb(46 91 173 / 60%);
+    cursor: pointer;
+    left: 6%;
+}
+
+#hd{
+    display: flex;
+    justify-content: center;
+}
+
+.Dubai{
+    background-image: url('../cities/dubai/6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.Cape-Town{
+    background-image: url('../cities/cape-town/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.London{
+    background-image: url('../cities/london/2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.NewYork{
+    background-image: url('../cities/new-york/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Athens{
+    background-image: url('../cities/athens/1.jpg');
+    background-repeat: no-repeat;
+    background-size: 382px 100%;
+}
+
+
+.card{
+  background-color: #262525;
+  color: #fff;
+  padding: 1.5rem;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  pointer-events: all;
+  border: none;
+  margin-bottom: 13px;
+  margin-top: 22px;
+  padding-right: 0px;
+}
+
+.card-title-large{
+    font-family: fantasy, sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    color: #1d1d1d;
+    transform: translateX(7rem);
+    transition: 2.5s;
+    display: flex;
+    width: 521px;
+}
+
+
+.card-title-small{
+    margin-bottom: 1rem;
+    background-color: rgb(0 0 0 / 60%);
+    /* background-blend-mode: multiply; */
+    padding-left: 5px;
+}
+
+.card-description{
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: rgb(0 0 0 / 60%);
+    /* background-blend-mode: multiply; */
+}
+
+.card:hover .card-title-large{
+    transform: translateX(-46%);
+    color: #fff;
+}
+
+.card:hover {
+    /* background-color: #1da1f2; */
+    z-index: 2;
+    cursor: pointer;
+}
+
+.con{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 20%;
+    pointer-events: none;
+}
+
+.con2{
+    top: 29%;
+}
+
+.bt-card{
+    width: 382px
+}
+
+
+.col-placement-left{
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 28px;
+}
+
+.col-placement-right{
+    display:flex;
+    justify-content: flex-start;
+    padding-right: 28px;
+}
+
+.col-placement-center{
+    display:flex;
+    justify-content: center;
+    padding-right: 28px;
+}
+
+.modal {
+    --bs-modal-width: 683px !important;
+}
+
+ /* For iPhone 4 Portrait or Landscape View */
+ @media screen and (min-device-width: 320px)
+ and (-webkit-min-device-pixel-ratio: 2) {
+    .bt-card {
+        width: 351px;
+    }    
+ }
+ 
+ /* For iPhone 5 Portrait or Landscape View */
+ @media (device-height: 568px) and (device-width: 320px)
+ and (-webkit-min-device-pixel-ratio: 2) {
+    .bt-card {
+        width: 351px;
+    }
+    
+ }
+ 
