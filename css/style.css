@@ -212,6 +212,51 @@ html, body {
     --bs-modal-width: 683px !important;
 }
 
+#close{
+    display: flex;
+    background: white;
+    border: none;
+    font-size: 26px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-weight: 800;
+}
+
+.contact{
+    align-items: center;
+    padding-left: 0;
+}
+
+.frm{
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x) !important;
+    width: 266pt;
+    margin-top: -30px;
+}
+
+.btn-submit{
+    width: 50%;
+    background: green;
+    border: none;
+    margin-top: 17px;
+}
+
+.btn-row{
+    display: flex;
+    justify-content: center;
+}
+.fav{
+    width: 100%; 
+    margin-top: 15px; 
+    font-weight: bolder;
+}
+
+.c-heading{
+    padding-right: 21px;
+    top: 4% !important;
+}
+
  /* For iPhone 4 Portrait or Landscape View */
  @media screen and (min-device-width: 320px)
  and (-webkit-min-device-pixel-ratio: 2) {
